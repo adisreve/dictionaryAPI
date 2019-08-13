@@ -15,12 +15,12 @@ const checkJwt = jwt({
       cache: true,
       rateLimit: true,
       jwksRequestsPerMinute: 5,
-      jwksUri: `https://dev-nsixzv1h.auth0.com/.well-known/jwks.json`
+      jwksUri: `auth0url`
     }),
   
     // Validate the audience and the issuer.
-    aud: 'https://dev-nsixzv1h.auth0.com/api/v2/',
-    issuer: `https://dev-nsixzv1h.auth0.com/`,
+    aud: 'copy the data from oauth',
+    issuer: `copy the issuer from oauth`,
     algorithms: ['RS256']
   });
 
